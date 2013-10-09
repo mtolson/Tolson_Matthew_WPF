@@ -20,3 +20,13 @@ var slicePerPerson = numPizza * slicePerPizza / numPeople; //figuring out the nu
 console.log("Each perosn ate " + slicePerPerson + " slices of pizza at the party."); // Printing the results to the console log
 
 console.log("Sparky got " + ((numPizza * slicePerPizza)-((~~(numPizza * slicePerPizza / numPeople))*numPeople))+ " slices of pizza"); // Printing the results to the console log
+
+var grocery = [parseInt(prompt("What was your first week grocery bill?"))];
+grocery[1] = parseInt(prompt("What was your second week grocery bill?"));
+grocery[2] = parseInt(prompt("What was your third week grocery bill?"));
+grocery[3] = parseInt(prompt("What was your fourth week grocery bill?"));
+grocery[4] = parseInt(prompt("What was your fifth week grocery bill?"));
+
+var groceryTotal = (grocery[0] + grocery[1]+grocery[2]+grocery[3]+grocery[4]);
+var groceryAvg = groceryTotal/5;
+console.log("You have spent a total of $"+groceryTotal+ " on groceries ocer 5 weeks. That is an average of $" + groceryAvg+ " per week.");
