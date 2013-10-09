@@ -30,3 +30,14 @@ grocery[4] = parseInt(prompt("What was your fifth week grocery bill?"));
 var groceryTotal = (grocery[0] + grocery[1]+grocery[2]+grocery[3]+grocery[4]);
 var groceryAvg = groceryTotal/5;
 console.log("You have spent a total of $"+groceryTotal+ " on groceries ocer 5 weeks. That is an average of $" + groceryAvg+ " per week.");
+
+
+var item = prompt("Description of the Item");
+var originalPrice =parseInt(prompt("What is the Original Price?"));
+var discount = parseInt(prompt("What is the discount?\n(ex: for 20% enter 20)"));
+var salesTax = parseInt(prompt("What is the Sales Tax?\n(ex: for 6.75% enter 6.75)"));
+
+var itemNoTax = originalPrice - (originalPrice * (discount/100))
+var itemTax = itemNoTax + (itemNoTax * (salesTax/100))
+
+console.log("Your " + item + " was originally $"+originalPrice+", but after a " +discount+"% discount, it is now $"+ itemNoTax+" without tax, and $"+itemTax+" with tax."); 
