@@ -8,5 +8,7 @@ var cost = parseInt(prompt("How much does one pack of cigarettes cost?"));
 var cigCost = cost/20
 var costDay = cigCost*numCigs
 
+console.log("You spend $"+costDay+" per day in cigarettes and $"+costDay*365+" per year.")
+
 console.log(cigCost)
 console.log(costDay)
