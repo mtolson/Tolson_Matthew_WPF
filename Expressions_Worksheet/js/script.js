@@ -17,23 +17,23 @@ console.log("Each perosn ate " + slicePerPerson + " slices of pizza at the party
 
 console.log("Sparky got " + ((numPizza * slicePerPizza)-((~~(numPizza * slicePerPizza / numPeople))*numPeople))+ " slices of pizza"); // Printing the results to the console log
 
-var grocery = [parseInt(prompt("What was your first week grocery bill?"))];
-grocery[1] = parseInt(prompt("What was your second week grocery bill?"));
-grocery[2] = parseInt(prompt("What was your third week grocery bill?"));
-grocery[3] = parseInt(prompt("What was your fourth week grocery bill?"));
-grocery[4] = parseInt(prompt("What was your fifth week grocery bill?"));
+var grocery = [parseInt(prompt("What was your first week grocery bill?"))]; //Gathering the first weeks grocery bill
+grocery[1] = parseInt(prompt("What was your second week grocery bill?"));//Gathering the second weeks grocery bill
+grocery[2] = parseInt(prompt("What was your third week grocery bill?"));//Gathering the third weeks grocery bill
+grocery[3] = parseInt(prompt("What was your fourth week grocery bill?"));//Gathering the fourth weeks grocery bill
+grocery[4] = parseInt(prompt("What was your fifth week grocery bill?"));//Gathering the fifth weeks grocery bill
 
-var groceryTotal = (grocery[0] + grocery[1]+grocery[2]+grocery[3]+grocery[4]);
-var groceryAvg = groceryTotal/5;
-console.log("You have spent a total of $"+groceryTotal+ " on groceries ocer 5 weeks. That is an average of $" + groceryAvg+ " per week.");
+var groceryTotal = (grocery[0] + grocery[1]+grocery[2]+grocery[3]+grocery[4]);//adding all the grocery bills for a total
+var groceryAvg = groceryTotal/5; //getting an average grocery bill
+console.log("You have spent a total of $"+groceryTotal+ " on groceries ocer 5 weeks. That is an average of $" + groceryAvg+ " per week."); // printing the results
 
 
-var item = prompt("Description of the Item");
-var originalPrice =parseInt(prompt("What is the Original Price?"));
-var discount = parseInt(prompt("What is the discount?\n(ex: for 20% enter 20)"));
-var salesTax = parseInt(prompt("What is the Sales Tax?\n(ex: for 6.75% enter 6.75)"));
+var item = prompt("Description of the Item"); // Gathering the item being purchased
+var originalPrice =parseInt(prompt("What is the Original Price?")); // getting the original price of the item
+var discount = parseInt(prompt("What is the discount?\n(ex: for 20% enter 20)")); // asking for the discount amount 
+var salesTax = parseInt(prompt("What is the Sales Tax?\n(ex: for 6.75% enter 6.75)"));//asking for the sales tax amount
 
-var itemNoTax = originalPrice - (originalPrice * (discount/100))
-var itemTax = itemNoTax + (itemNoTax * (salesTax/100))
+var itemNoTax = originalPrice - (originalPrice * (discount/100))// figuring out the cost of the item with out tax. ex: 100 -( 100*(20/100))=80
+var itemTax = itemNoTax + (itemNoTax * (salesTax/100)) // figuring out the sales tax of the item after the discount has already been made
 
-console.log("Your " + item + " was originally $"+originalPrice+", but after a " +discount+"% discount, it is now $"+ itemNoTax+" without tax, and $"+itemTax+" with tax."); 
+console.log("Your " + item + " was originally $"+originalPrice+", but after a " +discount+"% discount, it is now $"+ itemNoTax+" without tax, and $"+itemTax+" with tax."); //Printing the result of the differnt prices of the item purchased. 
