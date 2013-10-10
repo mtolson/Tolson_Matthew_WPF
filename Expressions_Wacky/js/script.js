@@ -13,7 +13,9 @@ var costYear =  costMonth*12;
 var eJuiceYear = eJuiceCost*12;
 var ecigTotalCost = eJuiceYear+ecigCost;
 var ecigAvgMonthCost = ecigTotalCost/12;
+var ecigSaveMonth = ecigAvgMonthCost-costMonth
+var ecigSaveYear = ecigTotalCost-costYear
 
 console.log("You spend $"+costMonth+" per month in cigarettes and $"+costYear+" per year.");
 console.log("Your average monthly cost for and Ecig is $"+ecigAvgMonthCost+" and yearly cost is $"+ecigTotalCost+".");
-console.log("You can save $"+ (ecigAvgMonthCost-costMonth) +" a month and $"+ecigTotalCost-costYear+" a year by switching to an ecig");
+console.log("You can save $"+ ecigSaveMonth +" a month and $"+ecigSaveYear+" a year by switching to an ecig");
