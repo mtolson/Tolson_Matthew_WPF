@@ -2,10 +2,6 @@
 // 10/8/13
 // Expression Worksheet
 
-//var dogHumanYears = 20;
-//var dogYears = 7;
-//var dogAge = dogHumanYears * dogYears;
-//console.log(dogAge);
 
 var dogAge = [7]; //setting the array dogAge with 7 years 
 dogAge[1] = prompt("How old is your dog in Human Years?"); //adding human years to the dogAge array
