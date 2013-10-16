@@ -16,15 +16,28 @@
 //}
 
 
-var username = prompt("Please enter the correct Username:"); //Ask for the Username
-var password = prompt("Please enter the correct Password:"); //Ask for the Password
-var cUsername = "Tolson"; // Set the correct Username
-var cPassword = "FullSail"; // Set the correct Password
+//var username = prompt("Please enter the correct Username:"); //Ask for the Username
+//var password = prompt("Please enter the correct Password:"); //Ask for the Password
+//var cUsername = "Tolson"; // Set the correct Username
+//var cPassword = "FullSail"; // Set the correct Password
+//
+//if(username === cUsername && password === cPassword){// determine if the username and password are the correct username and password
+//  console.log("Welcome, "+cUsername+"!"); // if both statments are true then this prints.
+//}else if(username === cUsername){ // if one of the statments above is false then see if the username is correct
+//  console.log("Password does not match our records."); //if both usernames are correct then print that the passwords are incorrect
+//}else{ 
+//  console.log("User not found. Try again.");//if the usernames are not equal then print this
+//}
 
-if(username === cUsername && password === cPassword){// determine if the username and password are the correct username and password
-  console.log("Welcome, "+cUsername+"!"); // if both statments are true then this prints.
-}else if(username === cUsername){ // if one of the statments above is false then see if the username is correct
-  console.log("Password does not match our records."); //if both usernames are correct then print that the passwords are incorrect
-}else{ 
-  console.log("User not found. Try again.");//if the usernames are not equal then print this
+var time = prompt("What time are you going to see the movie?\n(0-24)");
+var age = prompt("What is your age?");
+var ticketPrice = 12
+var discountAge = 55
+var discountCost = 7
+
+
+
+if (age >= discountAge){
+  ticketPrice = discountCost
 }
+console.log(ticketPrice)
