@@ -16,15 +16,15 @@
 //}
 
 
-var username = prompt("Please enter the correct Username:");
-var password = prompt("Please enter the correct Password:");
-var cUsername = "Tolson"
-var cPassword = "FullSail"
+var username = prompt("Please enter the correct Username:"); //Ask for the Username
+var password = prompt("Please enter the correct Password:"); //Ask for the Password
+var cUsername = "Tolson"; // Set the correct Username
+var cPassword = "FullSail"; // Set the correct Password
 
-if(username === cUsername && password === cPassword){
-  console.log("Welcome, "+cUsername+"!");
-}else if(username === cUsername){
-  console.log("Password does not match our records.");
-}else{
-  console.log("User not found. Try again.");
+if(username === cUsername && password === cPassword){// determine if the username and password are the correct username and password
+  console.log("Welcome, "+cUsername+"!"); // if both statments are true then this prints.
+}else if(username === cUsername){ // if one of the statments above is false then see if the username is correct
+  console.log("Password does not match our records."); //if both usernames are correct then print that the passwords are incorrect
+}else{ 
+  console.log("User not found. Try again.");//if the usernames are not equal then print this
 }
