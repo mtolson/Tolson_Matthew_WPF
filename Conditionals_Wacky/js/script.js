@@ -11,7 +11,7 @@ var tablePlayMin = 600
 var slotPlayMin = 200
 
 
-if(casino = "y"){
+if(casino === "y"){
   if (game === "table" && extraCash >= tablePlayMin){ 
     console.log("You have enough money to go play the Tables");
   }else if(game === "slot" && extraCash >= slotPlayMin){
