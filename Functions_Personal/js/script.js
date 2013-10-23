@@ -3,7 +3,7 @@
 // Functions Personal
 
 var today = new Date();
-var trip =  new Date(prompt"When is your trip?\n(Format yyyy/mm/dd)");
+var trip =  new Date(prompt("When is your trip?\n(Format yyyy/mm/dd)"));
 
 var daysTillTrip = function(today, trip){
   return Math.abs(today-trip)/(24*60*60*1000);
