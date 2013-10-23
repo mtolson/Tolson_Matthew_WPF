@@ -10,3 +10,4 @@ var calculateCircumference = function(r, p){
   return 2*r*p;
 }
 var circumference = calculateCircumference(radius, pi);
+console.log("The circumfernce of the circle is " + circumference)
