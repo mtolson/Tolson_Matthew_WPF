@@ -10,8 +10,9 @@ var quarterly = invoiceTotal/4;
 console.log(invoiceDate);
 
 do{
-  invoiceDate = invoiceDate + 7776000000;
+  invoiceDate = new Date(invoiceDate + 7776000000);
   console.log(invoiceDate);
+  count--
 }
-while (c>0);
+while (count>0);
 
