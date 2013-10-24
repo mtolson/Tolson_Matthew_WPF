@@ -9,7 +9,7 @@ var daysTillTrip = function(today, trip){ //annoymous function, setting the func
   return Math.abs(today-trip)/(24*60*60*1000); //returning the formula to the var that called the function. the date subtraction does everything in milliseconds so i had to convert it into days 
 }
 
-if (today<== trip){ // looks to see if today's date is less than the trips date if true goes to the next line of code, if not true then to the else statement
+if (today<= trip){ // looks to see if today's date is less than the trips date if true goes to the next line of code, if not true then to the else statement
   var days = daysTillTrip(today, trip);//calls the function daysTillTrip and sets the results to days. Passes the arguments today and trip to the function.
   if (days > 30){//looks at the results and sees if the results are greater than 30, if true next statments happens, if false then the next else statement
     console.log("You have "+days+" days until your trip, are you getting excited? Have you started planning what you will see and do?");//prints to the console  if the statement above is true
