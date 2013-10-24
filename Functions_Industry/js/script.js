@@ -7,11 +7,11 @@ var invoiceDate = new Date(prompt("What is the Date the Order was signed?\n (for
 
 var count = 3;
 var quarterly = invoiceTotal/4;
-console.log(invoiceDate);
+console.log("Your Invoice due on "+invoiceDate+" is in the amount of $"+quarterly+".");
 
 do{
-  invoiceDate = new Date(invoiceDate + 7776000000);
-  console.log(invoiceDate);
+  invoiceDate.setDate(invoiceDate.getDate()+90);
+  console.log("Your Invoice due on "+invoiceDate+" is in the amount of $"+quarterly".");
   count--
 }
 while (count>0);
