@@ -2,17 +2,17 @@
 // 10/24/13
 // Functions Wacky
 
-var wallHeight1 = parseInt(prompt("What is the height of the first wall?");
-var wallWidth1 = parseInt(prompt("What is the width of the first wall?");
+var wallHeight1 = parseInt(prompt("What is the height of the first wall?"));
+var wallWidth1 = parseInt(prompt("What is the width of the first wall?"));
 
-var wallHeight2 = parseInt(prompt("What is the height of the second wall?");
-var wallWidth2 = parseInt(prompt("What is the width of the second wall?");
+var wallHeight2 = parseInt(prompt("What is the height of the second wall?"));
+var wallWidth2 = parseInt(prompt("What is the width of the second wall?"));
 
-var wallHeight3 = parseInt(prompt("What is the height of the third wall?");
-var wallWidth3 = parseInt(prompt("What is the width of the third wall?");
+var wallHeight3 = parseInt(prompt("What is the height of the third wall?"));
+var wallWidth3 = parseInt(prompt("What is the width of the third wall?"));
 
-var wallHeight4 = parseInt(prompt("What is the height of the fourth wall?");
-var wallWidth4 = parseInt(prompt("What is the width of the fourth wall?");
+var wallHeight4 = parseInt(prompt("What is the height of the fourth wall?"));
+var wallWidth4 = parseInt(prompt("What is the width of the fourth wall?"));
 
 function calcRoomArea(h1,h2,h3,h4,w1,w2,w3,w4){
   var roomArea = (h1*w1)+(h2*w2)+(h3*w3)+(h4*w4)
