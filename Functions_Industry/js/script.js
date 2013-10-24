@@ -11,7 +11,7 @@ console.log("Your Invoice due on "+invoiceDate+" is in the amount of $"+quarterl
 
 do{
   invoiceDate.setDate(invoiceDate.getDate()+90);
-  console.log("Your Invoice due on "+invoiceDate+" is in the amount of $"+quarterly".");
+  console.log("Your Invoice due on "+invoiceDate+" is in the amount of $"+quarterly+".");
   count--
 }
 while (count>0);
